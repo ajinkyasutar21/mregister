@@ -7,3 +7,46 @@ Questions,Answers
 """Explain about spaghetti programming?""","""Spaghetti programming refers to programs that tend to get tangled and overlapped throughout the codes. This unorganized approach to coding is usually attributed to lack of experience on the part of the programmer. Spaghetti coding makes a program complex and analysing the codes difficult, and so must be avoided as much as possible."""
 """ In C program, how we can insert quote characters (‘ and ”) into the output screen?""",""" This is a common problem for freshers/beginners because quotes are normally part of a “printf” statement in program. If we want to  insert the quote character as part of the output, use the format specifiers , and ” (for double quote) , ’ (for single quote)."""
 """ Differentiate between the = symbol and == symbol?""","""The = symbol is"""
+""" How many numbers of addresses are usable for addressing in a Class C network?""","""254    The number of addresses usable for addressing specific hosts in each network is always 2 power N - 2 (where N is the number of rest field bits, and the subtraction of 2 adjusts for the use of the all-bits-zero host portion for network address and the all-bits-one host portion as a broadcast address. Thus, for a Class C address with 8 bits available in the host field, the number of hosts is 254
+
+ 
+
+Class A 0.0.0.0 - 127.255.255.255
+ 
+
+Class B 128.0.0.0 - 191.255.255.255
+
+ 
+
+Class C 192.0.0.0 - 223.255.255.255
+ 
+
+Class D 224.0.0.0 - 239.255.255.255
+ 
+
+Class E 240.0.0.0 - 247.255.255.255"""
+""" How are the data units at Application layer is called?""","""Message
+
+
+The data unit created at the application layer is called a message, at the transport layer the data unit created is called either a segment or an user datagram, at the network layer the data unit created is called the datagram, at the data link layer the datagram is encapsulated in to a frame and finally transmitted as signals along the transmission media
+
+ """
+""" What protocol is used by DNS name servers?""",""" UDP
+
+DNS uses UDP for communication between servers. It is a better choice than TCP because of the improved speed a connectionless protocol offers. Of course, transmission reliability suffers with UDP"""
+""" Which of the following is used to direct a packet inside an internal networks?""",""".Routers
+
+Routers are machines that direct a packet through the maze of networks that stand between its source and destination. Normally a router is used for internal networks while a gateway acts a door for the packet to reach the ‘outside’ of the internal network"""
+"""Is it possible to find a loop in a Linked list ?""",""" Possible at O(n) 
+Have two pointers say P1 and P2 pointing to the first node of the list. 
+Start a loop and Increment P1 once and P2 twice in each iteration. At any point of time if P1==P2 then there is a loop in that linked list. If P2 reaches NULL (end of linked list) then no loop exists.
+
+ """
+""" Given a Binary Search Tree (BST), print its values in ascending order.""","""Perform Inorder traversal
+It is the properfy of BST and Inorder traversal."""
+""" Is it possible to implement 2 stack in an array?""",""" 2 stacks can be implemented for the given condition
+Start 1st stack from left (1st position of an array) and 2nd from right (last position say n). Move 1st stack towards right( i.e 1,2,3 ...n) and 2nd towards left (i.e n,n-1,n-2...1)."""
+""" How many stacks are required to implement a Queue.""",""" Two
+Have two stacks S1 and S2.
+For Enqueue, perform push on S1.
+For Dequeue, if S2 is empty pop all the elements from S1 and push it to S2. The last element you popped from S1 is an element to be dequeued. If S2 is not empty, then pop the top element in it."""
